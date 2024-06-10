@@ -5,7 +5,7 @@ The purpose of this application is to provide you with your very own interactive
 I have created an application in Android Studio IDE using Kotlin programming language. The purpose of this application is to provide the user with the opportunity to enter in information about the weather giving the app the chance to produce the average temperature for the week as well as having access to a detailed summary of the weather for each day. In other words, the application will manage weekly weather conditions. 
 ----------------------------------------------------------------------------------
 
-LINK TO GITHUB REPOSITORY: 
+LINK TO GITHUB REPOSITORY: https://github.com/CassidyBekker/IMAD_PRACTICUM_CassidyBekker_ST10434181.git 
 
 ----------------------------------------------------------------------------------
 IMAGES:
