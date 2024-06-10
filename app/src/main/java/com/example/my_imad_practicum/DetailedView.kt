@@ -14,11 +14,12 @@ class DetailedView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detailed_view)
-
+// Declarations
 
         val tableLayout = findViewById<TableLayout>(R.id.TableLayout)
         val buttonBack = findViewById<Button>(R.id.ButtonBack)
 
+// Getting user input from the previous page where stored in an array
         val screenData = intent.getSerializableExtra("screenData") as ArrayList<ScreenDataEntry>
 
         if (screenData != null) {
@@ -32,7 +33,7 @@ class DetailedView : AppCompatActivity() {
         }
 
     }
-
+// Displays the user input in a Table Layout
     private fun populateSummaryTable(tableLayout: TableLayout, screenData: List<ScreenDataEntry>) {
         // Adding headings to the table
         val headerRow = TableRow(this)
@@ -42,7 +43,7 @@ class DetailedView : AppCompatActivity() {
         headerRow.addView(createTextView("Weather-conditions"))
         tableLayout.addView(headerRow)
 
-
+// Data that will go in each row
         screenData.forEach { entry ->
 
             val row = TableRow(this)

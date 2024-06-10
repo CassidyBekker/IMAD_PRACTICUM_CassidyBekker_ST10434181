@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-
+// creating a class and private functions.
 class MScreen : AppCompatActivity() {
     private lateinit var WeekDayInput: EditText
     private lateinit var MinTempInput: EditText
@@ -21,6 +21,8 @@ class MScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mscreen)
+
+// Declaring all values that will be needed in the below codes
 
         WeekDayInput = findViewById(R.id.WeekDayInput)
         MinTempInput = findViewById(R.id.MinTempInput)
@@ -35,18 +37,18 @@ class MScreen : AppCompatActivity() {
         val Adddata = findViewById<Button>(R.id.AddButton)
 
 
-
+// Declaring the button usuage and will be used in a later fun
         Avgbutton.setOnClickListener{
             calculateAverage()
 
         }
-
+// The clear button will clear all user inputs as well as the average output
         ClearButton.setOnClickListener {
             clearInputFields()
             AvgOutput.text = ""
         }
 
-
+// Goes back to first page
         Backbutton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -55,7 +57,7 @@ class MScreen : AppCompatActivity() {
         Adddata.setOnClickListener {
             addScreenData()
         }
-
+// Goes to the next page for detailed version
         Detailsbutton.setOnClickListener {
             val intent = Intent(this, DetailedView::class.java)
             intent.putExtra("screenData", ArrayList(screenData))
@@ -63,7 +65,9 @@ class MScreen : AppCompatActivity() {
         }
 
     }
+// Working in separate functions
 
+    // Code to calculate the average temp
     private fun calculateAverage() {
         val min = MinTempInput.text.toString().toIntOrNull() ?: 0
         val max = MaxTempInput.text.toString().toIntOrNull() ?: 0
@@ -72,7 +76,7 @@ class MScreen : AppCompatActivity() {
         AvgOutput.text = "Average: $average"
 
     }
-
+// Adds the user input to an array
     private fun addScreenData() {
         val Day = WeekDayInput.text.toString()
         val Min = MinTempInput.text.toString().toIntOrNull() ?: 0
@@ -88,12 +92,14 @@ class MScreen : AppCompatActivity() {
             )
             screenData.add(entry)
             clearInputFields()
+
+            // Error handling message
             Toast.makeText(this, "Data Entry Successful", Toast.LENGTH_LONG).show()
         } else {
             Toast.makeText(this, "Data in not entered correctly, please retry.", Toast.LENGTH_LONG).show()
         }
     }
-
+// Code to clear all user inputs at the same time
     private fun clearInputFields() {
         WeekDayInput.text.clear()
         MinTempInput.text.clear()

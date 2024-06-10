@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+        // Coding the button to Exit out of the app
         Exitbutton.setOnClickListener {
 
             finish() }
