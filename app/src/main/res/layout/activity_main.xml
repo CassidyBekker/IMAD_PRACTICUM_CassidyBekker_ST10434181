@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgweatha"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="331dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="@string/Heading1"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:text="@string/Heading1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="112dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="283dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/weathaicon" />
+
+    <TextView
+        android:id="@+id/MyName"
+        android:layout_width="164dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/baloo_bhai_2_semibold"
+        android:text="@string/MyName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/StNumber"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/StNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="257dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/baloo_bhai_2_semibold"
+        android:text="@string/StNum"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="194dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#92EF6C08"
+        android:fontFamily="@font/be_vietnam_medium"
+        android:text="@string/NextButton"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Exitbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Exitbutton"
+        android:layout_width="127dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="103dp"
+        android:backgroundTint="#92EF6C08"
+        android:fontFamily="@font/be_vietnam_medium"
+        android:text="@string/ExitButton"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/MyName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Greeting"
+        android:layout_width="292dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/Greeting"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/NextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

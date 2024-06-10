@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MY_IMAD_Practicum</string>
+    <string name="Heading1">Weatha Way</string>
+    <string name="MyName">Cassidy Bekker</string>
+    <string name="StNum">ST10434181</string>
+    <string name="ExitButton">EXIT</string>
+    <string name="NextButton">Next: MainScreen</string>
+    <string name="Greeting">Welcome to Weatha Way! Your very own interactive weather app. All you would want to know about the weather, right here!</string>
+    <string name="WeekDay">Day of Week:</string>
+    <string name="MaxTemp">Maximum Temp:</string>
+    <string name="MinTemp">Minimum Temp:</string>
+    <string name="WeathaCon">Weather Conditions:</string>
+    <string name="Details">Next: Details</string>
+    <string name="Back">Back to Main</string>
+    <string name="Clear">Clear</string>
+    <string name="Average">Calculate Average</string>
+    <string name="AddData">Add Data</string>
+    <string name="Back2">Back to previous</string>
+
+
+
+</resources>
